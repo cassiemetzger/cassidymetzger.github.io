@@ -34,9 +34,78 @@
 // }
 
 // variables.less
-$theme-primary: #F05F40;
+$theme-primary: #7272eb;
 $theme-dark: #222;
-
+.header-content-inner h1 {
+        margin-bottom: 20px; /* Space between title and first paragraph */
+    }
+    
+    .header-content-inner p {
+        margin-bottom: 20px; /* Space between the paragraph and the first link */
+        font-size: 18px; /* Make text more prominent */
+    }
+    
+    .header-content-inner a {
+        display: block; /* Makes the link take up full width of its container */
+        width: 200px; /* Adjusts to fit the content */
+        margin: 10px auto; /* Add vertical margin to space out links */
+        padding: 15px 10px; /* Adjust padding for button size */
+        text-align: center;
+        background-color: #7272eb; /* Blue background for button */
+        color: white; /* White text */
+        text-decoration: none; /* Removes underline from links */
+        border-radius: 5px; /* Rounded corners for buttons */
+        font-weight: bold; /* Bold text */
+    }
+    
+    .header-content-inner a:hover {
+        background-color: #34267b; /* Darker blue on hover */
+    }
+    
+    
+    .profile-image {
+        display: block; /* Ensures the image is on its own line */
+        margin: 0 auto 20px; /* Centers the image and adds spacing below */
+        width: 150px; /* Fixed width */
+        height: 150px; /* Fixed height */
+        border-radius: 50%; /* Makes the image circular */
+        object-fit: cover; /* Ensures the image fits within the circle */
+    }
+    
+    
+header .header-content .header-content-inner p {
+        font-weight: 300;
+        color: rgb(251, 251, 251);
+        background-color: rgba(104, 99, 192, 0.778); /* Add a light background */
+        padding: 10px 15px; /* Add padding around text */
+        border-radius: 5px; /* Round the corners */
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+        display: inline-block;
+        font-size: 16px;
+        margin-bottom: 50px;
+      }
+      #about a {
+        color: #1c1c64; /* Change to the color you prefer */
+        text-decoration: none; /* Remove underline if you prefer */
+    }
+    
+    #about a:hover, #about a:focus {
+        color: #a8a8e6; /* Change the hover color to something darker */
+    }
+    
+    /* Modal Body */
+.modal-body {
+        max-height: 400px;  /* You can adjust the height */
+        overflow-y: auto;   /* Allow vertical scrolling when content overflows */
+      }
+      
+      /* Image styling */
+      .modal-body img {
+        max-width: 100%;  /* Ensure image scales within the modal body */
+        margin: 20px 0;   /* Space above and below the image */
+      }
+      
+      
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
         "mixins",
